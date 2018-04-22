@@ -2,14 +2,30 @@
 	<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<form name="login">
 		<div class="login">
 		<div class="form">
+			<input type="text" placeholder= "Username" name="userid"/>
+			<input type="password" placeholder= "last 4 letters of password" name="pswrd"/>
+			<input type="text" placeholder= "Authentication code" name="authc"/>
+			<button class="button" onclick="check(this.form)"><span>Login</span></button>
+			</div>
+			</div>
+			</form>
 			
-			<input type="text" placeholder= "Username"/>
-			<input type="text" placeholder= "Last 4 digits of password"/>
-			<input type="text" placeholder= "Authentication Code"/>
-			<button class="button" onclick="window.location.href='Sucess.html'"><span>Login</span></button>
-		</div>
-		</div>
-	</body>
+			<script language="javascript">
+			function check(form)/*function to check userid & password*/
+				{
+					/*the following code checkes whether the entered userid and password are matching*/
+			if(form.userid.value == "osulliev" && form.pswrd.value == "word" && form.authc.value == "00000") 
+			{
+				window.open('Sucess.html')/*opens the target page while Id & password matches*/
+			}
+			else
+			{
+				alert("Error Password or Username")/*displays error message*/
+			}
+		}
+</script>
+</body>
 </html>
