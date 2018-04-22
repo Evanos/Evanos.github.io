@@ -11,15 +11,12 @@
 <p></p>
 
 
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   
-   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/style.css">
 
-   
- 
-  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="osulliev@tcd.ie"
-  action="https://script.google.com/macros/s/AKfycbyH7FEitTSwjHqGn6R6QtXoliIHANrU3Vu-fIgypg0aU-LOoWM/exec">
+	<form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="osulliev@tcd.ie"
+	action="https://script.google.com/macros/s/AKfycbyH7FEitTSwjHqGn6R6QtXoliIHANrU3Vu-fIgypg0aU-LOoWM/exec">
 
     <fieldset class="pure-message">
       <label for="message">Message: </label>
@@ -27,19 +24,18 @@
       placeholder="secret code"></textarea>
     </fieldset>
 
-<p hidden id="secret-2"> </p>
-
-<p hidden > <span id="counter"></span></p>
+	<p hidden id="secret-2"> </p>
+	<p hidden > <span id="counter"></span></p>
 
 	<div class = "login">
 	<div class = "form">
+	<h1>Two Factor Authentication</h1>
       <input class="pure-group" id="email" name="email" type="email" value=""
       required placeholder="Enter Email"/>
       <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
 		<button class="button" onclick="requestHotp();window.location.href='tempLogin.html'";>
       <span>Send Code</span></button>
-
 	</div>
 	</div>
 	</form>

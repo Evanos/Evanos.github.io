@@ -101,4 +101,15 @@ body{
             visibility: hidden;
         }
 
+.email{
+	position: relative;
+	z-index: 1;
+	background: rgba(171, 171, 171, .35);
+	max_width: 360px;
+	border-radius: 14px;
+	box-shadow:5px 4px 43px #000;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+}
 		
