@@ -90,3 +90,15 @@ body{
 	color: #3957ef;
 	text-decoration: none;
 }
+
+.secret-2 
+		{
+		visibility: hidden;
+		}
+		
+.pure-message
+        {
+            visibility: hidden;
+        }
+
+		

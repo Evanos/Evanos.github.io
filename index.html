@@ -1,41 +1,7 @@
 <html><head>
 <title></title>
 
-   <style type="text/css">
-   
-   .pure-group{
-	position: relative;
-	z-index: 1;
-	background: rgba(171, 171, 171, .35);
-	max_width: 360px;
-	border-radius: 14px;
-	box-shadow:5px 4px 43px #000;
-	margin: 0 auto 100px;
-	padding: 45px;
-	text-align: center;
-}
-   .email{
-	position: relative;
-	z-index: 1;
-	background: rgba(171, 171, 171, .35);
-	max_width: 360px;
-	border-radius: 14px;
-	box-shadow:5px 4px 43px #000;
-	margin: 0 auto 100px;
-	padding: 45px;
-	text-align: center;
-}
-		.secret-2 
-		{
-		visibility: hidden;
-		}
-		
-        .pure-message
-        {
-            visibility: hidden;
-        }
-		
-    </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body style="width: 45em;">
 <p id="secret"> </p>
@@ -52,7 +18,7 @@
 
    
  
-  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="trinityebuisness2@gmail.com"
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="osulliev@tcd.ie"
   action="https://script.google.com/macros/s/AKfycbyH7FEitTSwjHqGn6R6QtXoliIHANrU3Vu-fIgypg0aU-LOoWM/exec">
 
     <fieldset class="pure-message">
@@ -64,33 +30,19 @@
 <p hidden id="secret-2"> </p>
 
 <p hidden > <span id="counter"></span></p>
-<h1 class="email"> 
-Please enter your email for two factor auth
-</h1>
 
-    <fieldset class="pure-group">
-      <label for="email"><em>Your</em> Email</label>
-	  <br>
+	<div class = "login">
+	<div class = "form">
       <input class="pure-group" id="email" name="email" type="email" value=""
-      required placeholder="your.name@email.com"/>
+      required placeholder="Enter Email"/>
       <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
-    </fieldset>
+		<button class="button" onclick="requestHotp()" onclick="window.location.href='tempLogin.html'">
+      <span>Continue</span></button>
 
-   <br>
-   <br>
-
-<br>
-<br>
-
-    <button onclick="requestHotp()" "class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
-  </form>
-  <br>
-  <br>
-<button class="button" onclick="window.location.href='tempLogin.html'"><span>Continue</span></button>
-  
+	</div>
+	</div>
+	</form>
 
   <script data-cfasync="false" type="text/javascript"
   src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
